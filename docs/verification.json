@@ -1,0 +1,88 @@
+{
+  "version": "v0.8",
+  "verified_game_sha256": "d9402e46a8f3aa6625d0d90b049e04eb79f02e4d7ae6f54f08c64ed2da16a658",
+  "chd_patch_roundtrip": true,
+  "verified_disc_payloads": 301,
+  "vmu_fixture": "https://bucanero.github.io/apollo-saves/DC/dinocrisis/",
+  "runtime_checks": [
+    "RetroArch title",
+    "Flycast equipment and ammunition descriptions",
+    "Flycast map floor and location",
+    "Flycast VMU port list and occupied file data",
+    "Flycast load confirmation and both cursor positions"
+  ],
+  "screenshots": {
+    "01-title.png": {
+      "sha256": "b286f579de2c96a39f4518944b6541fae1758909e247b0d407e41db76a15e4e7",
+      "size": [
+        640,
+        480
+      ],
+      "capture": "RetroArch 1.22.2 / Flycast"
+    },
+    "02-equipment.png": {
+      "sha256": "cf74365b0a43d8c2a94bd41c199ec1b07b33c2277d10951b253a315fb878d5da",
+      "size": [
+        640,
+        480
+      ],
+      "capture": "Flycast runtime"
+    },
+    "02a-ammunition.png": {
+      "sha256": "a7bfeaa7e6d001ba32082d14f627e203193636a6952b7474e4c852bea9400e1b",
+      "size": [
+        640,
+        480
+      ],
+      "capture": "Flycast runtime"
+    },
+    "03-map.png": {
+      "sha256": "652ef66cf729a7174bd1d93edcea1f89a554be816b878432ea6f9c00ec6d5a93",
+      "size": [
+        640,
+        480
+      ],
+      "capture": "Flycast runtime"
+    },
+    "04-load.png": {
+      "sha256": "abf887f97b4a03e59eca26fe579365f0e31c322df23736547199cab0b818292e",
+      "size": [
+        640,
+        480
+      ],
+      "capture": "Flycast runtime"
+    },
+    "04a-memory-cards.png": {
+      "sha256": "bd54c6d1b990145fcf3b3a1ffffce6a43c1c8718619ca8b60be533e306292c8e",
+      "size": [
+        640,
+        480
+      ],
+      "capture": "Flycast runtime"
+    },
+    "04b-load-confirm.png": {
+      "sha256": "2434e75152738a6f0fd43e10add5d210c02a812617371dcf80a8842962416e56",
+      "size": [
+        640,
+        480
+      ],
+      "capture": "Flycast runtime"
+    },
+    "05-caption-preview.png": {
+      "sha256": "c24fcec3a28d209c84f91ffc34a738e46a1715325c4f3f2f3fd4c18ca7572e51",
+      "size": [
+        1296,
+        530
+      ],
+      "capture": "Original movie frames with v0.8 subtitle assets"
+    },
+    "06-dialogue.png": {
+      "sha256": "791f8e432e9e62a9888ec44bbd56dd062eeb86e813e1b5d3519b15d7527c1ef6",
+      "size": [
+        640,
+        480
+      ],
+      "capture": "Flycast runtime"
+    }
+  }
+}

@@ -1,0 +1,2 @@
+4468ac4e044fce985523215a85f81452ae045923b1b8d0a56a3f1a5cd7aed752  DC-Dino-Crisis-Kr-v0.8.zip
+0b81142ab2f148b70ab550a588963060d2fffe5d5ef680281eacab26c1bbbfcd  manifest.json

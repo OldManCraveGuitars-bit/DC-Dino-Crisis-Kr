@@ -1,0 +1,31 @@
+{
+  "version": "v0.8",
+  "platform": "Dreamcast",
+  "region": "Japan",
+  "source": {
+    "name": "Dino Crisis (Japan).chd",
+    "bytes": 537130056,
+    "sha256": "e3966230c049659a925d3a0a5d7134e0e35de17bf897d5f591c7daff05cd65ed"
+  },
+  "target": {
+    "name": "Dino Crisis (Japan) Korean-v0.8.chd",
+    "bytes": 518838086,
+    "sha256": "d9402e46a8f3aa6625d0d90b049e04eb79f02e4d7ae6f54f08c64ed2da16a658"
+  },
+  "patch": {
+    "name": "DC-Dino-Crisis-Kr-v0.8-track03.xdelta",
+    "bytes": 12364276,
+    "sha256": "4917150bd2f3b2ce68917ed9dedc5ce249d1d0aaaacec7bf3740d0c8fd27ca56"
+  },
+  "track03_source": {
+    "name": "track03.iso",
+    "bytes": 1032499200,
+    "sha256": "d8bcaa2330d40f40ea4f9fb02b5f9415397bd8bca298a54331f49a93c4e10321"
+  },
+  "track03_target": {
+    "name": "track03.iso",
+    "bytes": 1032499200,
+    "sha256": "be46a28ed5114229db6a79069fda20ffb9c1d7aa19ee7792e9ab6bb902e4f048"
+  },
+  "chdman_version": "0.264"
+}
