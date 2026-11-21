@@ -1,6 +1,6 @@
 {
   "version": "v0.8",
-  "verified_game_sha256": "d9402e46a8f3aa6625d0d90b049e04eb79f02e4d7ae6f54f08c64ed2da16a658",
+  "verified_game_sha256": "fa444cfda5e1b7c1ed75b7f8e83a8b21e69844cf05cc588342acee706706ca81",
   "chd_patch_roundtrip": true,
   "verified_disc_payloads": 301,
   "vmu_fixture": "https://bucanero.github.io/apollo-saves/DC/dinocrisis/",
@@ -9,7 +9,8 @@
     "Flycast equipment and ammunition descriptions",
     "Flycast map floor and location",
     "Flycast VMU port list and occupied file data",
-    "Flycast load confirmation and both cursor positions"
+    "Flycast load confirmation and both cursor positions",
+    "Flycast revised gate dialogue"
   ],
   "screenshots": {
     "01-title.png": {
@@ -18,7 +19,8 @@
         640,
         480
       ],
-      "capture": "RetroArch 1.22.2 / Flycast"
+      "capture": "RetroArch 1.22.2 / Flycast",
+      "disc_sha256": "d9402e46a8f3aa6625d0d90b049e04eb79f02e4d7ae6f54f08c64ed2da16a658"
     },
     "02-equipment.png": {
       "sha256": "cf74365b0a43d8c2a94bd41c199ec1b07b33c2277d10951b253a315fb878d5da",
@@ -26,7 +28,8 @@
         640,
         480
       ],
-      "capture": "Flycast runtime"
+      "capture": "Flycast runtime",
+      "disc_sha256": "d9402e46a8f3aa6625d0d90b049e04eb79f02e4d7ae6f54f08c64ed2da16a658"
     },
     "02a-ammunition.png": {
       "sha256": "a7bfeaa7e6d001ba32082d14f627e203193636a6952b7474e4c852bea9400e1b",
@@ -34,7 +37,8 @@
         640,
         480
       ],
-      "capture": "Flycast runtime"
+      "capture": "Flycast runtime",
+      "disc_sha256": "d9402e46a8f3aa6625d0d90b049e04eb79f02e4d7ae6f54f08c64ed2da16a658"
     },
     "03-map.png": {
       "sha256": "652ef66cf729a7174bd1d93edcea1f89a554be816b878432ea6f9c00ec6d5a93",
@@ -42,7 +46,8 @@
         640,
         480
       ],
-      "capture": "Flycast runtime"
+      "capture": "Flycast runtime",
+      "disc_sha256": "d9402e46a8f3aa6625d0d90b049e04eb79f02e4d7ae6f54f08c64ed2da16a658"
     },
     "04-load.png": {
       "sha256": "abf887f97b4a03e59eca26fe579365f0e31c322df23736547199cab0b818292e",
@@ -50,7 +55,8 @@
         640,
         480
       ],
-      "capture": "Flycast runtime"
+      "capture": "Flycast runtime",
+      "disc_sha256": "d9402e46a8f3aa6625d0d90b049e04eb79f02e4d7ae6f54f08c64ed2da16a658"
     },
     "04a-memory-cards.png": {
       "sha256": "bd54c6d1b990145fcf3b3a1ffffce6a43c1c8718619ca8b60be533e306292c8e",
@@ -58,7 +64,8 @@
         640,
         480
       ],
-      "capture": "Flycast runtime"
+      "capture": "Flycast runtime",
+      "disc_sha256": "d9402e46a8f3aa6625d0d90b049e04eb79f02e4d7ae6f54f08c64ed2da16a658"
     },
     "04b-load-confirm.png": {
       "sha256": "2434e75152738a6f0fd43e10add5d210c02a812617371dcf80a8842962416e56",
@@ -66,7 +73,8 @@
         640,
         480
       ],
-      "capture": "Flycast runtime"
+      "capture": "Flycast runtime",
+      "disc_sha256": "d9402e46a8f3aa6625d0d90b049e04eb79f02e4d7ae6f54f08c64ed2da16a658"
     },
     "05-caption-preview.png": {
       "sha256": "c24fcec3a28d209c84f91ffc34a738e46a1715325c4f3f2f3fd4c18ca7572e51",
@@ -77,12 +85,34 @@
       "capture": "Original movie frames with v0.8 subtitle assets"
     },
     "06-dialogue.png": {
-      "sha256": "791f8e432e9e62a9888ec44bbd56dd062eeb86e813e1b5d3519b15d7527c1ef6",
+      "sha256": "517edc3e3cb95363a7dde85576e2ddf32f999ec24feb736d069f9886b7083193",
       "size": [
         640,
         480
       ],
-      "capture": "Flycast runtime"
+      "capture": "Flycast runtime on the revised v0.8 disc",
+      "disc_sha256": "fa444cfda5e1b7c1ed75b7f8e83a8b21e69844cf05cc588342acee706706ca81"
     }
+  },
+  "revised_disc_changed_files": [
+    "ST112.DAT"
+  ],
+  "zip_patcher_output_sha256": "fa444cfda5e1b7c1ed75b7f8e83a8b21e69844cf05cc588342acee706706ca81",
+  "dialogue_correction": {
+    "id": "ST112_s10_050506",
+    "before": "이제 장난은 끝이다, 애들아",
+    "after": "이제 장난은 끝이다. 애송이들",
+    "source": "   遠足気分はここまでにしろ   "
+  },
+  "exe_patcher": {
+    "filename": "DC-Dino-Crisis-Kr-v0.8-Patcher.exe",
+    "bytes": 23646872,
+    "sha256": "b600445cf96260d8f0c9c36577bd648ec7dc616c42a9076fd36e04a0f58a5f0f",
+    "windows_amd64": true,
+    "gui_controls_checked": true,
+    "unicode_source_and_output_paths": true,
+    "wrong_source_rejected": true,
+    "existing_output_preserved": true,
+    "verified_generated_chd_sha256": "fa444cfda5e1b7c1ed75b7f8e83a8b21e69844cf05cc588342acee706706ca81"
   }
 }

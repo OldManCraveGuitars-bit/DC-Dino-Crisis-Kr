@@ -6,9 +6,17 @@ Dreamcast 일본판 **Dino Crisis (Japan)** 한국어 패치입니다.
 
 **한글화 · 기타 깎는 노인**
 
-[**v0.8 패치 ZIP 받기**](https://github.com/OldManCraveGuitars-bit/DC-Dino-Crisis-Kr/releases/download/v0.8/DC-Dino-Crisis-Kr-v0.8.zip) · [릴리스 안내](https://github.com/OldManCraveGuitars-bit/DC-Dino-Crisis-Kr/releases/tag/v0.8)
+[**Windows용 v0.8 EXE 패처 받기**](https://github.com/OldManCraveGuitars-bit/DC-Dino-Crisis-Kr/releases/download/v0.8/DC-Dino-Crisis-Kr-v0.8-Patcher.exe) · [PowerShell 패치 ZIP](https://github.com/OldManCraveGuitars-bit/DC-Dino-Crisis-Kr/releases/download/v0.8/DC-Dino-Crisis-Kr-v0.8.zip) · [릴리스 안내](https://github.com/OldManCraveGuitars-bit/DC-Dino-Crisis-Kr/releases/tag/v0.8)
 
-## 적용 방법
+## Windows용 EXE 적용 방법
+
+1. EXE 패처를 실행하고 아래 SHA-256과 일치하는 일본판 원본 CHD를 선택합니다.
+2. 출력 CHD를 저장할 위치와 새 파일 이름을 지정합니다.
+3. **한국어 패치 적용**을 누르고 완료 안내가 나올 때까지 기다립니다.
+
+EXE에 패치 차분과 적용 도구가 들어 있습니다. 출력 드라이브에 3GB 이상의 여유 공간이 필요합니다. 적용 후 `Dino Crisis (Japan) Korean-v0.8.chd`를 실행하면 됩니다.
+
+## PowerShell ZIP 적용 방법
 
 1. 패치 ZIP을 풀고 SHA-256이 아래 표와 일치하는 일본판 CHD를 준비합니다.
 2. Windows에서 PowerShell을 열고 ZIP을 푼 폴더로 이동합니다. 적용에는 chdman 0.264와 xdelta3 3.2.1을 사용했습니다. [MAME 0.264](https://github.com/mamedev/mame/releases/tag/mame0264) · [Xdelta 3.2.1](https://github.com/jmacd/xdelta/releases/tag/v3.2.1)
@@ -27,6 +35,7 @@ Dreamcast 일본판 **Dino Crisis (Japan)** 한국어 패치입니다.
 - 가로 선택지 20곳과 저장·불러오기 확인창의 화살표 위치를 점검했습니다.
 - 교신과 영상 자막은 가운데에 배치했습니다. 번역 재검수에서 음성 자막·보고와 메뉴 문구 61곳을 수정했습니다.
 - 오프닝과 이벤트·엔딩 영상에 한국어 자막 31개를 적용했습니다.
+- 초반 경계초소 장면의 대사를 ‘이제 장난은 끝이다. 애송이들’로 수정했습니다.
 
 ## 스크린샷
 
@@ -42,7 +51,7 @@ Dreamcast 일본판 **Dino Crisis (Japan)** 한국어 패치입니다.
 
 ![불러오기 확인창과 아니오 선택 화살표](docs/screenshots/04b-load-confirm.png)
 
-![새 게임에서 확인한 한국어 대사](docs/screenshots/06-dialogue.png)
+![수정한 경계초소 장면의 대사](docs/screenshots/06-dialogue.png)
 
 아래 두 장면은 원본 영상 프레임 위에 배포 빌드의 자막을 얹은 미리보기입니다.
 
@@ -53,17 +62,20 @@ Dreamcast 일본판 **Dino Crisis (Japan)** 한국어 패치입니다.
 | 파일 | 크기(바이트) | SHA-256 |
 | --- | ---: | --- |
 | 일본판 원본 CHD | 537,130,056 | `e3966230c049659a925d3a0a5d7134e0e35de17bf897d5f591c7daff05cd65ed` |
-| v0.8 적용 결과 CHD | 518,838,086 | `d9402e46a8f3aa6625d0d90b049e04eb79f02e4d7ae6f54f08c64ed2da16a658` |
-| ZIP 안의 트랙 3 차분 | 12,364,276 | `4917150bd2f3b2ce68917ed9dedc5ce249d1d0aaaacec7bf3740d0c8fd27ca56` |
-| v0.8 배포 ZIP | 10,802,016 | `4468ac4e044fce985523215a85f81452ae045923b1b8d0a56a3f1a5cd7aed752` |
+| v0.8 적용 결과 CHD | 518,838,116 | `fa444cfda5e1b7c1ed75b7f8e83a8b21e69844cf05cc588342acee706706ca81` |
+| Windows용 v0.8 EXE 패처 | 23,646,872 | `b600445cf96260d8f0c9c36577bd648ec7dc616c42a9076fd36e04a0f58a5f0f` |
+| ZIP 안의 트랙 3 차분 | 12,364,347 | `fcf29026b9aaf89d475b38831c08964a220d5d253beb5b4aaf1319f71cad6ee5` |
+| v0.8 배포 ZIP | 10,802,086 | `40023485e25bba81562fc1cc06964162eda250fe8e7e59f31fb15cdf590e7cd0` |
 
 [파일별 해시](manifest.json) · [다운로드 해시](SHA256SUMS.txt)
 
 ## 검증 범위
 
-- RetroArch 1.22.2의 Flycast 코어에서 한글 타이틀까지 새로 부팅해 확인했습니다.
+- 첫 공개 빌드의 한글 타이틀은 RetroArch 1.22.2의 Flycast 코어에서, 수정한 경계초소 대사는 갱신 빌드의 Flycast 실행 화면에서 확인했습니다.
 - Flycast에서 새 게임을 진행해 권총·탄환 이름, 장비 하단 설명, 지도 층·장소명과 범례를 확인했습니다.
 - 일본판 샘플 저장이 있는 검수용 VMU로 불러오기 포트, 파일 상세 정보, 확인창의 예·아니오와 화살표를 확인했습니다. [검수용 저장 파일 출처](https://bucanero.github.io/apollo-saves/DC/dinocrisis/)
-- 배포 패치로 만든 CHD는 검수 빌드와 파일 크기 및 SHA-256이 일치했습니다. [검증 기록](docs/verification.json)
+- EXE와 ZIP으로 각각 일본판 원본을 패치한 결과, 완성 CHD의 크기와 SHA-256이 검수 빌드와 일치했습니다. EXE는 원본과 출력 경로에 한글과 공백을 넣어 검사했습니다. [검증 기록](docs/verification.json)
+
+[패처 빌드 스크립트](tools/build-patcher.ps1) · [번들 도구와 라이선스](THIRD_PARTY_NOTICES.md)
 
 비공식 팬 번역입니다. 게임과 스크린샷의 권리는 각 권리자에게 있습니다.

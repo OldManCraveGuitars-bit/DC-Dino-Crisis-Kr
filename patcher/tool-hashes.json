@@ -1,0 +1,12 @@
+{
+  "chdman": {
+    "name": "chdman.exe",
+    "bytes": 3027456,
+    "sha256": "58d5f13b14a07d0d65f05fbaa5d78f62e85a0e98c6f4c89e423e44998b3ddff8"
+  },
+  "xdelta": {
+    "name": "xdelta3.exe",
+    "bytes": 340480,
+    "sha256": "2081fb24a7b8a89d068b58e7d9353647d5fc1512a68bb6a37f71fc60ca84d943"
+  }
+}
