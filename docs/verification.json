@@ -1,26 +1,44 @@
 {
-  "version": "v0.8",
-  "verified_game_sha256": "fa444cfda5e1b7c1ed75b7f8e83a8b21e69844cf05cc588342acee706706ca81",
+  "version": "v0.81",
+  "verified_game_sha256": "62c9d7c72e3c8d30beeda4a6e3ac6eac262d1167c90ee95970a9920810b32fcb",
   "chd_patch_roundtrip": true,
   "verified_disc_payloads": 301,
-  "vmu_fixture": "https://bucanero.github.io/apollo-saves/DC/dinocrisis/",
-  "runtime_checks": [
-    "RetroArch title",
-    "Flycast equipment and ammunition descriptions",
-    "Flycast map floor and location",
-    "Flycast VMU port list and occupied file data",
-    "Flycast load confirmation and both cursor positions",
-    "Flycast revised gate dialogue"
+  "voice_subtitle_review": {
+    "scope": "In-game event, radio and warning subtitles paired with English voice cues from the Japanese Dreamcast disc",
+    "isolated_archive_clips_transcribed": 724,
+    "paired_clips": 586,
+    "changed_clips": 267,
+    "changed_subtitle_rows": 476,
+    "changed_room_files": 44,
+    "preserved_voice_archive_sha256": "a0fe92afda29af0e864b4ebdbd4554fed2f1fac293e343c7f97d921ef7d94ab4",
+    "screen_alignment_cases": 20,
+    "choice_cursor_cases": 20,
+    "route_exception": "XA.AFS/63 West as written in the original Japanese route instruction for this release."
+  },
+  "current_runtime_checks": [
+    "RetroArch 1.22.2 / Flycast cold boot to Korean title",
+    "Flycast checkpoint dialogue seen on the revised disc"
   ],
+  "previous_menu_verification": {
+    "version": "v0.8",
+    "disc_sha256": "d9402e46a8f3aa6625d0d90b049e04eb79f02e4d7ae6f54f08c64ed2da16a658",
+    "vmu_fixture": "https://bucanero.github.io/apollo-saves/DC/dinocrisis/",
+    "runtime_checks": [
+      "Flycast equipment and ammunition descriptions",
+      "Flycast map floor and location",
+      "Flycast VMU port list and occupied file data",
+      "Flycast load confirmation and both cursor positions"
+    ]
+  },
   "screenshots": {
     "01-title.png": {
-      "sha256": "b286f579de2c96a39f4518944b6541fae1758909e247b0d407e41db76a15e4e7",
+      "sha256": "a097b3f87eb8c117cc82819d4710d44790d5710d46385af8d70dd87d8951b30c",
       "size": [
         640,
         480
       ],
-      "capture": "RetroArch 1.22.2 / Flycast",
-      "disc_sha256": "d9402e46a8f3aa6625d0d90b049e04eb79f02e4d7ae6f54f08c64ed2da16a658"
+      "capture": "RetroArch 1.22.2 / Flycast cold boot",
+      "disc_sha256": "62c9d7c72e3c8d30beeda4a6e3ac6eac262d1167c90ee95970a9920810b32fcb"
     },
     "02-equipment.png": {
       "sha256": "cf74365b0a43d8c2a94bd41c199ec1b07b33c2277d10951b253a315fb878d5da",
@@ -82,37 +100,50 @@
         1296,
         530
       ],
-      "capture": "Original movie frames with v0.8 subtitle assets"
+      "capture": "Original movie frames with Korean subtitle assets from v0.8"
     },
     "06-dialogue.png": {
-      "sha256": "517edc3e3cb95363a7dde85576e2ddf32f999ec24feb736d069f9886b7083193",
+      "sha256": "6bf9613ae5220b84c4881abd901a462c8726bb94a50d9864fe375316615a502b",
       "size": [
         640,
         480
       ],
-      "capture": "Flycast runtime on the revised v0.8 disc",
-      "disc_sha256": "fa444cfda5e1b7c1ed75b7f8e83a8b21e69844cf05cc588342acee706706ca81"
+      "capture": "Flycast d27b3a1 checkpoint runtime",
+      "disc_sha256": "62c9d7c72e3c8d30beeda4a6e3ac6eac262d1167c90ee95970a9920810b32fcb"
+    },
+    "07-voice-review.png": {
+      "sha256": "da17f4f651609adcec2a883ff2ad58fe2c0120b166488ef6cf5f6e8018e0e60b",
+      "size": [
+        640,
+        480
+      ],
+      "capture": "Flycast d27b3a1 checkpoint voice subtitle review",
+      "disc_sha256": "62c9d7c72e3c8d30beeda4a6e3ac6eac262d1167c90ee95970a9920810b32fcb"
     }
   },
-  "revised_disc_changed_files": [
-    "ST112.DAT"
-  ],
-  "zip_patcher_output_sha256": "fa444cfda5e1b7c1ed75b7f8e83a8b21e69844cf05cc588342acee706706ca81",
-  "dialogue_correction": {
-    "id": "ST112_s10_050506",
-    "before": "이제 장난은 끝이다, 애들아",
-    "after": "이제 장난은 끝이다. 애송이들",
-    "source": "   遠足気分はここまでにしろ   "
+  "retroarch_title": {
+    "content_sha256": "62c9d7c72e3c8d30beeda4a6e3ac6eac262d1167c90ee95970a9920810b32fcb",
+    "core_sha256": "bb2577bf3b32323f30a6c2c1877317ae43440706c0fc82c4ab6ed92e9f104263",
+    "driver": "gl",
+    "test_inputs": 0,
+    "save_state_loaded": false,
+    "method": "verified cold-boot screenshot"
   },
   "exe_patcher": {
-    "filename": "DC-Dino-Crisis-Kr-v0.8-Patcher.exe",
-    "bytes": 23646872,
-    "sha256": "b600445cf96260d8f0c9c36577bd648ec7dc616c42a9076fd36e04a0f58a5f0f",
+    "filename": "DC-Dino-Crisis-Kr-v0.81-Patcher.exe",
+    "bytes": 23648621,
+    "sha256": "b0bf587a4f8c3de645f570a9c27b452be21a680aeeed02a48c31a40451c0a632",
     "windows_amd64": true,
     "gui_controls_checked": true,
     "unicode_source_and_output_paths": true,
     "wrong_source_rejected": true,
     "existing_output_preserved": true,
-    "verified_generated_chd_sha256": "fa444cfda5e1b7c1ed75b7f8e83a8b21e69844cf05cc588342acee706706ca81"
+    "verified_generated_chd_sha256": "62c9d7c72e3c8d30beeda4a6e3ac6eac262d1167c90ee95970a9920810b32fcb"
+  },
+  "zip_patcher": {
+    "filename": "DC-Dino-Crisis-Kr-v0.81.zip",
+    "bytes": 10805017,
+    "sha256": "2a2c5ff4a0eb6ed08cc9ca9e61b533420d7247e53391d114a837e47a370716fe",
+    "verified_generated_chd_sha256": "62c9d7c72e3c8d30beeda4a6e3ac6eac262d1167c90ee95970a9920810b32fcb"
   }
 }

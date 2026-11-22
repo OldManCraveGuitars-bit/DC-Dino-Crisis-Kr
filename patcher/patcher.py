@@ -1,4 +1,4 @@
-"""Standalone Windows patcher for Dino Crisis Korean v0.8."""
+"""Standalone Windows patcher for Dino Crisis Korean v0.81."""
 from __future__ import annotations
 
 import argparse
@@ -14,7 +14,7 @@ import sys
 import tempfile
 import threading
 
-VERSION = '0.8'
+VERSION = '0.81'
 RESOURCES = Path(getattr(sys, '_MEIPASS', Path(__file__).resolve().parent))
 
 
@@ -153,13 +153,13 @@ def create_gui(payload=None):
     payload = Path(payload or RESOURCES / 'payload')
     manifest = read_manifest(payload)
     root = tk.Tk()
-    root.title('디노 크라이시스 한국어 패치 v0.8')
+    root.title('디노 크라이시스 한국어 패치 v0.81')
     root.geometry('760x480')
     root.minsize(700, 480)
     frame = ttk.Frame(root, padding=22)
     frame.pack(fill='both', expand=True)
     ttk.Label(frame, text='디노 크라이시스', font=('맑은 고딕', 20, 'bold')).pack(anchor='w')
-    ttk.Label(frame, text='Dreamcast 일본판 한국어 패치 v0.8',
+    ttk.Label(frame, text='Dreamcast 일본판 한국어 패치 v0.81',
               font=('맑은 고딕', 11)).pack(anchor='w', pady=(3, 16))
     source = tk.StringVar()
     output = tk.StringVar()
@@ -282,7 +282,7 @@ def main():
         root.update_idletasks()
         assert widgets['source_entry'].winfo_exists() and widgets['output_entry'].winfo_exists()
         assert widgets['apply_button'].cget('text') == '한국어 패치 적용'
-        assert root.title().endswith('v0.8')
+        assert root.title().endswith('v0.81')
         result = dict(success=True, version=VERSION, source_and_output_controls=True,
                       patch_button=True, korean_title=True, visual_screenshot_verified=False)
         root.destroy()

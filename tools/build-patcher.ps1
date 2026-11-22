@@ -35,7 +35,7 @@ Copy-Item -LiteralPath $manifestPath -Destination (Join-Path $payload 'manifest.
 Copy-Item -LiteralPath $hashesPath -Destination (Join-Path $payload 'tool-hashes.json')
 $arguments = @(
     '--noconfirm', '--clean', '--onefile', '--windowed', '--noupx',
-    '--name', 'DC-Dino-Crisis-Kr-v0.8-Patcher',
+    '--name', 'DC-Dino-Crisis-Kr-v0.81-Patcher',
     '--version-file', (Join-Path $root 'patcher/version_info.txt'),
     '--add-data', "$(Join-Path $root 'licenses');licenses",
     '--distpath', (Join-Path $build 'dist'),
